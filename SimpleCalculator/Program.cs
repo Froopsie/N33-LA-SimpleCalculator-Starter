@@ -8,6 +8,8 @@ namespace SimpleCalculator
         {
             try
             {
+                /// CHANGE 2 & 3 (Chris)          
+
                 // Class to convert user input
                 InputConverter inputConverter = new InputConverter();
 
@@ -20,7 +22,7 @@ namespace SimpleCalculator
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
 
-                Console.WriteLine(result);
+                Console.WriteLine("The final answer is: " + result);
 
             } catch (Exception ex)
             {
