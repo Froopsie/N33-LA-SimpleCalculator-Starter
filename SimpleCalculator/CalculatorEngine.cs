@@ -8,9 +8,33 @@ namespace SimpleCalculator
         {
             double result = 0;
 
-            if (argOperation == "+" || argOperation.ToLower() == "add") {
-                result = argFirstNumber + argSecondNumber;
+            switch(argOperation){
+                case "add":
+                case ""+"":
+                    result = argFirstNumber + argSecondNumber;
+                    break;
+
+                case "minus":
+                case "-":
+                    result = argFirstNumber - argSecondNumber;
+                    break;
+
+                case "multiply":
+                case "*":
+                    result = argFirstNumber * argSecondNumber;
+                    break;
+
+                case "devide":
+                case "/":
+                    result = argFirstNumber / argSecondNumber;
+                    break;
+
+                case "modulus":
+                case "%":
+                    result = argFirstNumber % argSecondNumber;
+                    break;
             }
+            
 
             return result;
         }
