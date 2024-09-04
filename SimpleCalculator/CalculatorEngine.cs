@@ -24,7 +24,7 @@ namespace SimpleCalculator
                     result = argFirstNumber * argSecondNumber;
                     break;
 
-                case "devide":
+                case "divide":
                 case "/":
                     result = argFirstNumber / argSecondNumber;
                     break;
