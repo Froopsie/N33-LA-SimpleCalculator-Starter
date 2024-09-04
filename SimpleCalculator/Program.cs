@@ -15,7 +15,11 @@ namespace SimpleCalculator
                 // Class to perform actual calculations
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
 
+                Console.WriteLine("Enter Your First Number: ");
                 double firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
+
+
+
                 double secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
                 string operation = Console.ReadLine();
 
