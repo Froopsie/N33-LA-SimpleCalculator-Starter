@@ -1,4 +1,5 @@
 ﻿using System;
+using CalcLibrary;
 
 namespace SimpleCalculator
 {
@@ -11,7 +12,7 @@ namespace SimpleCalculator
                 /// CHANGE 2 & 3 (Chris)          
 
                 // Class to convert user input
-
+                
                 // Class to perform actual calculations
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
 
