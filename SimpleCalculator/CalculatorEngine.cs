@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 namespace SimpleCalculator
 {
@@ -7,10 +8,10 @@ namespace SimpleCalculator
         public double Calculate (string argOperation, double argFirstNumber, double argSecondNumber)
         {
             double result = 0;
-
-            switch(argOperation){
+            
+            switch (argOperation){
                 case "add":
-                case ""+"":
+                case "+":
                     result = argFirstNumber + argSecondNumber;
                     break;
 
