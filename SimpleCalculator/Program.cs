@@ -42,6 +42,7 @@ namespace SimpleCalculator
                     }
                 }
                 string operation;
+              
                 try
                 {
                     Console.WriteLine("Enter Your Operation Sign of Choice. (+, -, \\, *, % or add, minus, multiply, divide, modulus)");
