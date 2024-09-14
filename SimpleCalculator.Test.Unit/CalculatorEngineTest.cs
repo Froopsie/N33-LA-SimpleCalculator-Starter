@@ -20,6 +20,7 @@ namespace SimpleCalculator.Test.Unit
         }
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
         public void AddsTwoNumbersAndReturnsValidResultForSymbolOpertion()
         {
 
