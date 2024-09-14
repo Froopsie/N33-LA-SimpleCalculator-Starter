@@ -12,8 +12,8 @@ namespace SimpleCalculator
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
 
                 bool worked;
-                double firstNumber= 0;
-                double secondNumber = 0;
+                double firstNumber;
+                double secondNumber;
 
                 while (true)
                 {
@@ -47,7 +47,6 @@ namespace SimpleCalculator
                 {
                     Console.WriteLine("Enter Your Operation Sign of Choice. (+, -, \\, *, % or add, minus, multiply, divide, modulus)");
                     operation = Console.ReadLine().ToLower();
-
                     double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
                     Console.WriteLine("The final answer is: " + result);
                 }

@@ -6,15 +6,13 @@ namespace SimpleCalculator.Test.Unit
     [TestClass]
     public class InputConverterTest
     {
-        
-        //private readonly InputConverter _inputConverter = new InputConverter();
+        private readonly InputConverter _inputConverter = new InputConverter();
 
         [TestMethod]
         public void ConvertsValidStringInputIntoDouble()
         {
-            bool worked;
             string inputNumber = "5";
-            double convertedNumber = InputConverter.ConvertInputToNumeric(inputNumber, out worked);
+            double convertedNumber = _inputConverter.ConvertInputToNumeric(inputNumber);
             Assert.AreEqual(5, convertedNumber);
         }
 
@@ -22,12 +20,9 @@ namespace SimpleCalculator.Test.Unit
         [ExpectedException(typeof(ArgumentException))]
         public void FailsToConvertsInvalidStringInputIntoDouble()
         {
-            bool worked;
             string inputNumber = "*";
-            
-                double convertedNumber = InputConverter.ConvertInputToNumeric(inputNumber, out worked);
-
-                Assert.AreEqual(2, convertedNumber);    
+            double convertedNumber = _inputConverter.ConvertInputToNumeric(inputNumber);
+            Assert.AreEqual(2, convertedNumber);
         }
     }
 }
